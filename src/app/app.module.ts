@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { routing } from "./app.routing";
-import { BugService } from './shared/bug.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MatSliderModule } from '@angular/material/slider';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -53,7 +52,6 @@ import { MatCardModule } from '@angular/material/card';
     MatSortModule,
     MatCardModule
   ],
-  providers: [BugService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

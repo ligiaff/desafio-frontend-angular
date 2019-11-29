@@ -19,7 +19,6 @@ export class TodosComponent implements OnInit {
   ngOnInit() {
     
     this.apiService.getTodos().subscribe((todoList)=>{
-      console.log(todoList);
       this.dataSource = new MatTableDataSource<Todo>(todoList);
       this.dataSource.paginator = this.paginator;
     });
