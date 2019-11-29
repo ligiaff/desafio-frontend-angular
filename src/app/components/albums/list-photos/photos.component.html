@@ -1,0 +1,9 @@
+<section class="container">
+    <h2 class="section__title text-uppercase">{{viewAlbum.title}} - <small>Autor(a): {{viewAlbum.userName}}</small></h2>
+    <div class="row">
+        <mat-card *ngFor="let photo of viewAlbumPhotos">
+            <img mat-card-image src="{{photo.url}}">
+            <mat-card-title>{{photo.title}}</mat-card-title>
+        </mat-card>
+    </div>
+</section>

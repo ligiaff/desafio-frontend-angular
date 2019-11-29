@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+/* Structure */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-3,
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Buttons */
+.btn {
+    padding: .6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 5px 0;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Label */
+.label {
+    color: white;
+    font-size: .8rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+
+    &.label-green {
+        background-color: #4CAF50;
+    }
+    &.label-orange {
+        background-color: salmon;
+    }
+}
+
+/* Title */
+.section__title {
+    padding: 1.1rem 0;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        background-color: #9f76e8;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/* Article */
+.article__box {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.1rem;
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.article__box--single {
+        min-height: 300px;
+
+        .article__title {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+    }
+    &.article__box--sm {
+        min-height: 140px;
+    }
+    &.article__box--md {
+        min-height: 230px;
+    }
+}
+.article__title {
+    color: #444;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.article__subtitle {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.article__body {
+    color: #222;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+

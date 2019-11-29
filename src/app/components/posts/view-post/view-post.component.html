@@ -1,0 +1,15 @@
+<section class="container">
+    <h2 class="section__title text-uppercase">{{viewPost.title}} - <small>Autor(a): {{viewPost.userName}}</small></h2>
+    <div class="article__box article__box--single">
+        <div class="article__content">
+            <p class="article__body">{{viewPost.body}}</p>
+        </div>
+    </div>
+    <h2 class="section__title">Comentários</h2>
+    <div *ngFor="let comment of viewPost.comments">
+        <p><strong>Nome:</strong> {{comment.name}}</p>
+        <p><strong>E-mail:</strong> {{comment.email}}</p>
+        <p>{{comment.body}}</p>
+        <hr>
+    </div>
+</section>

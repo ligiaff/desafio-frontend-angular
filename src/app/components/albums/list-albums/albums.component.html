@@ -1,0 +1,15 @@
+<section class="container">
+    <h2 class="section__title">Álbuns</h2>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let album of albums">
+            <article class="article__box article__box--sm">
+                <div class="article__content">
+                    <h1 class="article__title">{{album.title}}</h1>
+                </div>
+                <div class="article__btn">
+                    <a class="btn btn-primary" href="/albuns/{{album.id}}">Ver álbum</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

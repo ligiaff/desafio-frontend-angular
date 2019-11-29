@@ -1,0 +1,19 @@
+.mat-card {
+    width: 300px;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-bottom: 0;
+}
+.mat-card-title {
+    min-height: 45px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #666;
+}
+
+.mat-card-image {
+    object-fit: cover;
+}

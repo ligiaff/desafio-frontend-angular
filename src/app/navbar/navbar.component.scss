@@ -1,0 +1,27 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar {
+  background-color: #450092;
+  color: white;
+  img {
+    max-width: 100%;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgb(2,0,36);
+  background: linear-gradient(167deg, #6304ce 0%, #6700da 62%, #0097ff 100%);
+}
+
+.mat-navbar-container {
+  padding: 1.5rem;
+}

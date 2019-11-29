@@ -1,0 +1,21 @@
+<h2 class="section__title">To-dos</h2>
+<div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource">
+        <!-- Title Column -->
+        <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> <strong>Descrição</strong> </mat-header-cell>
+        <mat-cell *matCellDef="let todo"> {{todo.title}} </mat-cell>
+        </ng-container>
+    
+        <!-- Status Column -->
+        <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef> <strong>Status</strong> </mat-header-cell>
+        <mat-cell *matCellDef="let todo"> <span class="label label-{{todo.completed == true ? 'green' : 'orange'}}">{{todo.completed == true ? 'Concluído' : 'Em andamento'}}</span></mat-cell>
+        </ng-container>
+    
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    
+    <mat-paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+</div>
